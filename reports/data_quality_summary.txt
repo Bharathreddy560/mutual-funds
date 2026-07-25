@@ -1,0 +1,113 @@
+Data Quality Summary
+
+File: 01_fund_master.csv
+
+Shape:
+40 rows, 15 columns
+
+Observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are appropriate.
+- Dataset is clean and ready for analysis.
+ 
+====================================
+File: 02_nav_history.csv
+
+Shape:
+46000 rows, 3 columns
+
+Observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+===============================================
+File: 03_aum_by_fund_house.csv
+
+shape:
+90 rows/records, 5 columns
+
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+
+====================================
+File: 04_monthly_sip_inflows.csv
+
+Shape:
+48 rows, 6 columns
+
+Observations:
+- 12 missing values found in the yoy_growth_pct column.
+- No duplicate rows found.
+- Missing values in yoy_growth_pct are expected for the initial months where previous-year data is unavailable.
+- Dataset is usable for analysis.
+======================================================================
+Dataset Name: 05_category_inflows.csv
+
+• Shape: (144, 3)
+• Contains monthly investment inflows by mutual fund category.
+• No missing values.
+• No duplicate rows.
+• Data types are correct.
+• Can be used to analyze investor preferences across different mutual fund categories over time.
+======================================================================
+dataset name: 06_industry_folio_count.csv
+ 
+-Shape:(21, 6)
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+======================================================================
+Dataset name ; 07_scheme_performance.csv
+
+-shape:(40,19)
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+======================================================================
+Data set name: 08_investor_transactions.csv
+
+shape :(32778,13)
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+======================================================================
+Dataset name:09_portfolio_holdings.csv
+shape :(322,8)
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+======================================================================
+Dataset name:10_benchmark_indices.csv
+shape :(8050,3)
+observations:
+- No missing values found.
+- No duplicate rows found.
+- Data types are correct.
+- Dataset is clean and ready for analysis.
+
+=-=================================================
+
+
+DATA QUALITY SUMMARY
+
+1. Successfully loaded all 10 CSV datasets.
+2. Verified dataset shapes and data types.
+3. Displayed the first 5 rows of each dataset.
+4. Checked for missing values.
+5. Checked for duplicate rows.
+6. Explored unique fund houses, categories, sub-categories, and risk categories.
+7. Validated that all AMFI codes in fund_master.csv exist in nav_history.csv.
+8. The datasets are clean and ready for further analysis.
