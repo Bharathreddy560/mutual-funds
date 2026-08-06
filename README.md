@@ -12,11 +12,12 @@ This project is an end-to-end **Mutual Fund Analytics** solution developed using
 * Store cleaned data in a SQLite database.
 * Execute SQL-based business analysis.
 * Conduct exploratory data analysis (EDA).
+* Perform mutual fund performance analytics.
 * Generate visual insights and analytical reports.
 
 ## Project Structure
 
-```
+```text
 mutual-fund-analytics/
 │
 ├── data/
@@ -33,16 +34,16 @@ mutual-fund-analytics/
 
 ## Technologies Used
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Seaborn**
-* **Plotly**
-* **SQLite**
-* **SQLAlchemy**
-* **Requests**
-* **Git & GitHub**
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Plotly
+* SQLite
+* SQLAlchemy
+* Requests
+* Git & GitHub
 
 ## Work Completed
 
@@ -93,12 +94,24 @@ Created **11 analytical visualizations** including:
 
 Generated business insights from the visualizations to understand market trends, fund performance, and investor behavior.
 
-### Day 4: Project Organization
+### Day 4: Performance Analytics
 
-* Restructured project files.
-* Renamed and organized Python modules.
-* Improved repository structure and maintainability.
-* Updated GitHub repository with the latest project organization.
+Performed detailed **mutual fund performance analysis** using historical NAV and benchmark datasets.
+
+Key analyses completed:
+
+* Return calculations (absolute and percentage returns)
+* Rolling return analysis
+* CAGR estimation
+* Volatility analysis
+* Risk-adjusted performance comparison
+* Fund ranking based on performance metrics
+* Benchmark comparison
+* Performance trend visualization
+* Category-wise performance evaluation
+* Identification of top and bottom performing schemes
+
+Generated performance insights to evaluate fund consistency, risk-return characteristics, and comparative fund performance across categories.
 
 ## Key Features
 
@@ -108,30 +121,9 @@ Generated business insights from the visualizations to understand market trends,
 * SQLite database integration
 * SQL-based analytics
 * Exploratory data analysis
+* Mutual fund performance analytics
 * Interactive and static visualizations
 * Version-controlled project workflow
-
-## Current Status
-
-**Project Completion:** Approximately **75%**
-
-Completed:
-
-* Data ingestion
-* Data cleaning
-* SQLite database
-* SQL analytics
-* EDA with 11 visualizations
-* Business insights
-* Project organization
-
-Upcoming:
-
-* Dashboard development
-* Advanced financial metrics
-* Performance analysis
-* Forecasting models
-* Final analytical report
 
 ## Author
 
