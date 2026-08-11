@@ -112,11 +112,13 @@ Key analyses completed:
 * Identification of top and bottom performing schemes
 
 Generated performance insights to evaluate fund consistency, risk-return characteristics, and comparative fund performance across categories.
-## Dashboard (Power BI)
+=======
+## Day 5:Dashboard (Power BI)
 
 Developed a four-page interactive Power BI dashboard for mutual fund analytics.
 
-### Day 5: Dashboard pages
+### Dashboard pages
+>>>>>>> f7657a7 (Day 6: Updated README with Power BI dashboard documentation)
 
 * **Industry overview:** KPI cards, AUM trend, AUM by fund house
 * **Fund performance:** Risk vs return scatter plot, NAV trend, fund scorecard
