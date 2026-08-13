@@ -1,3 +1,11 @@
+"""
+Fund recommendation engine.
+
+Recommends the top 3 mutual funds based on
+risk appetite and Sharpe ratio.
+
+Author: Bandi Bharath
+"""
 import pandas as pd
 
 # Load datasets

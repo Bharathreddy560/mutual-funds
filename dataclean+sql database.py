@@ -1,3 +1,12 @@
+"""
+Data cleaning and SQLite database creation.
+
+This script cleans mutual fund datasets,
+handles missing values, standardizes formats,
+and creates the project database.
+
+Author: Bandi Bharath
+"""
 import pandas as pd
 from sqlalchemy import create_engine
 import sqlite3

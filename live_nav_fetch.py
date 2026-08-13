@@ -1,3 +1,17 @@
+"""
+Mutual Fund Analytics - Live NAV fetch
+
+Fetches the latest NAV values for selected mutual fund schemes
+using the mfapi.in API and stores the results for analysis.
+
+Functions:
+- Fetch live NAV
+- Handle API responses
+- Save latest NAV data
+
+Author: Bandi Bharath
+Project: Bluestock Mutual Fund Analytics Capstone
+"""
 import os
 import requests
 import pandas as pd

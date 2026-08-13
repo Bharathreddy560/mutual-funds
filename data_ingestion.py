@@ -1,3 +1,17 @@
+"""
+Mutual Fund Analytics - Data ingestion
+
+Loads all raw mutual fund datasets, validates the data,
+and prepares them for the ETL pipeline.
+
+Functions:
+- Load raw CSV datasets
+- Validate dataset structure
+- Perform initial data quality checks
+
+Author: Bandi Bharath
+Project: Bluestock Mutual Fund Analytics Capstone
+"""
 import os
 import pandas as pd
 

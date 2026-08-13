@@ -1,154 +1,230 @@
 # Mutual Fund Analytics Capstone Project
 
-## Overview
+A complete end-to-end data analytics project that analyzes mutual fund performance, investor behavior, portfolio risk, and fund recommendations using Python, SQL, and interactive visualizations.
 
-This project is an end-to-end **Mutual Fund Analytics** solution developed using **Python, SQL (SQLite), and data visualization libraries**. The project focuses on collecting, cleaning, storing, analyzing, and visualizing mutual fund data to generate meaningful business insights.
+## Project overview
 
-## Project Objectives
+This project was developed as part of the Bluestock Fintech Data Analytics Capstone Program. The project builds a complete analytics pipeline for mutual fund data, starting from raw data ingestion and cleaning, followed by exploratory data analysis, performance analytics, risk analytics, investor behavior analysis, and dashboard reporting.
 
-* Collect and process mutual fund datasets.
-* Integrate live NAV data using the MFAPI API.
-* Perform data cleaning and preprocessing.
-* Store cleaned data in a SQLite database.
-* Execute SQL-based business analysis.
-* Conduct exploratory data analysis (EDA).
-* Perform mutual fund performance analytics.
-* Generate visual insights and analytical reports.
+The project uses Python, SQL, SQLite, and visualization libraries to generate actionable investment insights.
 
-## Project Structure
+## Business objective
 
-```text
+The primary objective of this project is to evaluate mutual fund performance and investor behavior to support better investment decision-making. The project focuses on:
+
+* Identifying high-performing funds
+* Measuring downside risk
+* Understanding investor investment patterns
+* Detecting SIP discontinuity risk
+* Building a simple fund recommendation engine
+* Comparing portfolio concentration across funds
+
+## Project objectives
+
+The project was completed across multiple phases:
+
+* Data ingestion and validation
+* Data cleaning and preprocessing
+* SQL database creation
+* Exploratory data analysis
+* Performance analytics
+* Advanced risk analytics
+* Investor analytics
+* Dashboard development
+* Final reporting and presentation
+
+## Project architecture
+
+Raw CSV datasets
+↓
+Data cleaning & preprocessing
+↓
+SQLite database
+↓
+Exploratory data analysis
+↓
+Performance & risk analytics
+↓
+Investor analytics
+↓
+Interactive dashboard
+↓
+Business insights & recommendations
+
+## Project structure
+
 mutual-fund-analytics/
 │
 ├── data/
 │   ├── raw/
 │   └── processed/
-├── notebooks/
-├── sql/
-├── dashboard/
+│
+├── notebook/
+│   ├── performance_analytics.ipynb
+│   └── Advanced_Analytics.ipynb
+│
 ├── reports/
-├── src/
+│   ├── var_cvar_report.csv
+│   ├── rolling_sharpe_chart.png
+│   └── performance reports
+│
+├── dashboard/
+│   └── dashboard.pdf
+│
+├── sql/
+│   ├── schema.sql
+│   └── queries.sql
+│
+├── recommender.py
 ├── requirements.txt
-└── README.md
-```
+├── README.md
+└── run_pipeline.py
 
-## Technologies Used
+## Dataset descriptions
+
+The project uses ten primary datasets:
+
+| Dataset               | Description                     |
+| --------------------- | ------------------------------- |
+| Fund Master           | Scheme information and metadata |
+| NAV History           | Historical NAV values           |
+| AUM by Fund House     | Assets under management         |
+| Monthly SIP Inflows   | SIP investment trends           |
+| Category Inflows      | Fund category inflows           |
+| Industry Folio Count  | Investor participation          |
+| Scheme Performance    | Return metrics                  |
+| Investor Transactions | SIP and lump-sum investments    |
+| Portfolio Holdings    | Stock and sector allocations    |
+| Benchmark Indices     | Market benchmark 
+performance    |
+
+## Installation and setup
+
+### Clone the repository
+
+git clone https://github.com/Bharathreddy560/mutual-funds.git
+
+cd mutual-funds
+
+### Create virtual environment
+
+python -m venv venv
+
+### Activate virtual environment
+
+Windows:
+
+venv\Scripts\activate
+
+### Install dependencies
+
+pip install -r requirements.txt
+
+## How to run the project
+
+Run the complete analytics pipeline:
+
+python run_pipeline.py
+
+Run the fund recommender:
+
+python recommender.py
+
+Open the dashboard:
+
+dashboard/dashboard.pdf
+
+## Analytics performed
+
+### Exploratory data analysis
+
+* NAV trend analysis
+* SIP growth analysis
+* Investor demographic analysis
+* Geographic distribution analysis
+* Correlation analysis
+
+### Performance analytics
+
+* CAGR
+* Sharpe ratio
+* Sortino ratio
+* Alpha and Beta
+* Maximum drawdown
+* Tracking error
+
+### Advanced risk analytics
+
+* Historical VaR (95%)
+* Conditional VaR (CVaR)
+* Rolling 90-day Sharpe ratio
+* Sector concentration (HHI)
+
+### Investor analytics
+
+* Cohort analysis
+* SIP continuity analysis
+* At-risk investor detection
+
+### Recommendation engine
+
+* Risk-based fund recommendation
+* Sharpe ratio ranking
+* Low / Moderate / High risk mapping
+
+## Key findings
+
+* Large-cap funds delivered superior risk-adjusted performance.
+* Small-cap funds exhibited the highest downside risk.
+* The 2024 investor cohort contributed the largest investment volume.
+* More than 1,300 investors were identified as at-risk due to irregular SIP continuity.
+* Sector concentration varied significantly across equity funds.
+* Rolling Sharpe analysis highlighted periods of changing fund efficiency.
+
+## Technologies used
 
 * Python
 * Pandas
 * NumPy
 * Matplotlib
-* Seaborn
 * Plotly
 * SQLite
-* SQLAlchemy
-* Requests
-* Git & GitHub
+* SQL
+* Jupyter Notebook
+* Git
+* GitHub
+## Final project deliverables
 
-## Work Completed
+* Final_Report.pdf
+* Bluestock_MF_Presentation.pptx
+* Advanced_Analytics.ipynb
+* recommender.py
+* run_pipeline.py
+* Dashboard
+* Performance and risk analytics reports
 
-### Day 1: Project Setup & Data Ingestion
+## Project completion status
 
-* Created project folder structure.
-* Set up Python virtual environment.
-* Installed required dependencies.
-* Loaded and validated **10 mutual fund datasets**.
-* Performed dataset inspection (`shape`, `dtypes`, `head`).
-* Integrated **MFAPI** for live NAV data.
-* Validated AMFI scheme codes across datasets.
-* Initialized Git repository and pushed the project to GitHub.
+All major project objectives have been completed, including ETL, SQL database creation, exploratory data analysis, performance analytics, advanced risk analytics, investor analytics, dashboard development, reporting, and presentation.
 
-### Day 2: Data Cleaning & SQLite Database
+## Repository
 
-* Removed duplicate records.
-* Trimmed extra spaces.
-* Handled missing values.
-* Standardized text and numerical formats.
-* Created processed datasets.
-* Built a **SQLite database**.
-* Imported cleaned datasets into database tables.
-* Wrote SQL queries for:
+GitHub: https://github.com/Bharathreddy560/mutual-funds
 
-  * Fund house analysis
-  * Category analysis
-  * AUM analysis
-  * Scheme performance
-  * Aggregation and ranking
-* Documented the complete data cleaning and SQL workflow.
-
-### Day 3: Exploratory Data Analysis (EDA)
-
-Created **11 analytical visualizations** including:
-
-* Fund house distribution
-* Category-wise fund analysis
-* Sub-category analysis
-* Risk category distribution
-* AUM comparison
-* Scheme performance analysis
-* NAV trend visualization
-* Investor transaction analysis
-* Portfolio concentration analysis
-* Benchmark comparison
-* Summary analytical charts
-
-Generated business insights from the visualizations to understand market trends, fund performance, and investor behavior.
-
-### Day 4: Performance Analytics
-
-Performed detailed **mutual fund performance analysis** using historical NAV and benchmark datasets.
-
-Key analyses completed:
-
-* Return calculations (absolute and percentage returns)
-* Rolling return analysis
-* CAGR estimation
-* Volatility analysis
-* Risk-adjusted performance comparison
-* Fund ranking based on performance metrics
-* Benchmark comparison
-* Performance trend visualization
-* Category-wise performance evaluation
-* Identification of top and bottom performing schemes
-
-Generated performance insights to evaluate fund consistency, risk-return characteristics, and comparative fund performance across categories.
-=======
-## Day 5:Dashboard (Power BI)
-
-Developed a four-page interactive Power BI dashboard for mutual fund analytics.
-
-### Dashboard pages
->>>>>>> f7657a7 (Day 6: Updated README with Power BI dashboard documentation)
-
-* **Industry overview:** KPI cards, AUM trend, AUM by fund house
-* **Fund performance:** Risk vs return scatter plot, NAV trend, fund scorecard
-* **Investor analytics:** State-wise transaction analysis, transaction type split, age-group SIP analysis
-* **SIP & market trends:** SIP inflows vs Nifty 50, category inflow heatmap, top inflow categories
-
-### Key features
-
-* Interactive slicers
-* Data relationships using AMFI code
-* Professional dashboard layout
-* Exportable PDF and presentation-ready visuals
-
-
-## Key Features
-
-* Automated data ingestion
-* Live NAV API integration
-* Data preprocessing pipeline
-* SQLite database integration
-* SQL-based analytics
-* Exploratory data analysis
-* Mutual fund performance analytics
-* Interactive and static visualizations
-* Version-controlled project workflow
 
 ## Author
 
 **Bandi Bharath**
 
-Data Analyst Intern | AIML Student
+Bluestock Fintech Data Analytics Capstone Project
 
-GitHub: https://github.com/Bharathreddy560
+GitHub: https://github.com/Bharathreddy560/mutual-funds
+
+
+
+
+
+
+
+
+
