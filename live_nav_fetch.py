@@ -40,6 +40,6 @@ for name, code in schemes.items():
 
         df.to_csv(f"data/raw/live_nav/{name}.csv", index=False)
 
-        print(f"✅ {name} saved successfully.")
+        print(f"{name} saved successfully.")
     else:
-        print(f"❌ Failed to fetch {name}")
+        print(f"Failed to fetch {name}")

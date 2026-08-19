@@ -84,7 +84,7 @@ missing_codes = fund_codes - nav_codes
 print("\n========== AMFI CODE VALIDATION ==========")
 
 if len(missing_codes) == 0:
-    print("✅ All AMFI codes from Fund Master are present in NAV History.")
+    print("All AMFI codes from Fund Master are present in NAV History.")
 else:
-    print("❌ Missing AMFI Codes:")
+    print("Missing AMFI Codes:")
     print(missing_codes)
